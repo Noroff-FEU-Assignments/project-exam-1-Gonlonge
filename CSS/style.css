@@ -1,6 +1,7 @@
+/* Header */
+
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
   padding: 20px 10px;
 }
 
@@ -16,19 +17,35 @@
 }
 
 .header a:hover {
-  color: gray;
+  color: rgb(250, 202, 162);
 }
 
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+  color: rgb(250, 202, 162);
 }
 
-.header-right {
-  float: right;
+/* body screen */
+
+.main-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 399px) {
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 650px) {
+}
+
+@media (max-width: 768px) {
+  .header-right {
+    float: right;
+  }
+
   .header a {
     float: none;
     display: block;
@@ -38,4 +55,10 @@
   .header-right {
     float: none;
   }
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 1680px) {
 }
