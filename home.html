@@ -9,31 +9,136 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage blog of Norway</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div class="main-container">
-        <div class="header">
-          <a href="home.html" class>Blog Of Norway</a>
-          <div class="header-right">
-            <a class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="bloglist-post.html">All blogg post</a>
-            <a href="specific-blog-post.html">Blog post</a>
-            <a href="contact.html">contact</a>
+      <div class="main-container header-menu">
+        <div class="logo">
+          <a href="home.html">
+            <img src="images/logo.png" alt="norwegian logo of the blog" />
+          </a>
+          <div class="link-button">
+            <a href="home.html">
+              <h1>
+                Blog Of
+                <span class="logo-color">N</span>orway
+              </h1>
+            </a>
           </div>
+        </div>
+        <div class="link-button header-logo">
+          <a class="active space-menu">Home</a>
+          <a class="space-menu" href="about.html">About</a>
+          <a class="space-menu" href="destinations.html">Destinations</a>
+          <a class="space-menu" href="specific-blog-post.html">Archives</a>
+          <a class="space-menu" href="contact.html">Contact</a>
         </div>
       </div>
     </header>
     <main>
-      <div class="main-container">
+      <div class="loader loading-indicator main-container section-space"></div>
+      <div class="main-container section-space">
         <img
-          src="images/header-home.jpg"
-          alt="header image fjord in Norway"
-          class="main-container"
+          src="images/frontpage.jpg"
+          alt="fjord in Norway with norwegian architecture"
+          class="responsive-image"
         />
       </div>
-    </main>
+      <section
+        class="main-container flex-wrapper section-space">
+        <div>
+          <img
+            src="images/me.jpg"
+            alt="me in the sun"
+            class="responsive-image round-image"
+          />
+        </div>
+        <div class="space-between">
+          <h2>Hallo!</h2>
+          <p>
+            I'm Gonzalo I had a dream about traveling around Norway for 1 year
+            as a fulltime blogger. My goal is to show how much the country has
+            to offer and to inspire other to do the same. I work as a part time
+            frontend developer and I will share my every day experiences, enjoy!
+            <div class="link-button">
+              <a href="about.html">Read more >></a>
+
+
+            </div>
+          </p> 
+        </div>
+      </section>
+      <section  class="main-container grid-wrapper">
+        <div class="blog-results "></div>
+      
+    </section>
+    </main> 
+
+
+    <section class="grid-wrapper main-container"  >
+      <div>
+        <a href="/visit.html" class="a-color">
+          <img
+            src="images/me.jpg"
+            alt="inside of museum"
+            class="responsive-image"
+          />
+
+          <h2>H2 TITLE HERE</h2>
+
+          <p>Some Text HERE Some Text HERE Some Text HERE </p>
+        </a>
+      </div>
+      <div>
+        <a href="/fun.html" class="a-color">
+          <img
+            src="images/me.jpg"
+            alt="kid with virtuel reality"
+            class="responsive-image"
+          />
+
+          <h2>H2 TITLE HERE</h2>
+
+          <p>Some Text HERE Some Text HERE Some Text HERE </p>
+        </a>
+      </div>
+      <div>
+        <a href="/learn.html" class="a-color">
+          <img
+            src="images/me.jpg"
+            alt="kid reading a book"
+            class="responsive-image"
+          />
+          <h2>H2 TITLE HERE</h2>
+
+          <p>Some Text HERE Some Text HERE Some Text HERE </p>
+        </a>
+      </div>
+    </section>
+    <footer class="responsive-image  background-color-page">
+      <div
+        class="flex-wrapper section-space"
+      >
+        <div class="header-block">
+          <p>Instagram</p>
+          <p>Facebook</p>
+          <p>Tiktok</p>
+        </div>
+
+        <div>
+          <p>Contact Me</p>
+          <p>gonlonge@icloud.com</p>
+          <p>Stavanger 4031 Geitastova 1</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
