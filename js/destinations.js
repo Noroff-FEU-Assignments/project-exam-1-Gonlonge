@@ -11,3 +11,5 @@ async function getProducts(url) {
                               <div>${result.content.rendered}</div>`;
   });
 }
+
+getProducts(url);
