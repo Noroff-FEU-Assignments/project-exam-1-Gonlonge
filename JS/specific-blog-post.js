@@ -16,6 +16,8 @@ async function getProduct(url) {
 
   detailResults.innerHTML = `<div>
   <h3>${getResult.title.rendered}</h3>
+  
+  <p>${getResult.content.rendered}</p>
   </div>`;
 }
 getProduct(url);

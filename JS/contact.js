@@ -35,13 +35,13 @@ function validateForm(event) {
   } else {
     subjectError.style.display = "block";
   }
-  if (checkLength(lastName.value, 25) === true) {
+  if (checkLength(message.value, 25) === true) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
   }
 
-  console.log("hello");
+  console.log("hi");
 }
 
 form.addEventListener("submit", validateForm);
