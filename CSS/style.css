@@ -10,6 +10,8 @@ h3 {
 a {
   font-family: "roboto", sans-serif, Arial, Helvetica, serif "Times New Roman",
     Times;
+  color: black;
+  text-decoration: none;
 }
 
 .bolder-text {
@@ -28,23 +30,29 @@ a {
 
 /* buttons links */
 
-a {
-  text-decoration: none;
+a:-webkit-any-link:hover {
+  color: #4caf50;
+  transition: 0.3s;
 }
 
 .current-site {
   color: #4caf50;
 }
 
+select {
+  box-shadow: none;
+  outline: none;
+}
+
+select:hover {
+  color: #4caf50;
+  transition: 0.3s;
+}
+
 .link-button {
   color: black;
   text-decoration: none;
   font-weight: 1000;
-}
-
-.link-button:hover {
-  color: #4caf50;
-  transition: 0.3s;
 }
 
 button {
@@ -59,6 +67,12 @@ button {
 
 button:hover {
   background-color: #4caf50;
+  transition: 0.3s;
+}
+
+.view-more-post {
+  padding: 10px 13px;
+  border-radius: 10px;
 }
 
 /* head */
@@ -102,12 +116,16 @@ body {
 /* contact */
 
 input {
-  width: 100%;
+  width: 200px;
+  display: inline-block;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  transition: 0.1s;
+  outline: none;
 }
 
-label {
-  display: block;
-  margin-top: 1rem;
+input:hover {
+  border: 2px solid #d8d1d1;
 }
 
 .form-error {
@@ -278,6 +296,9 @@ label {
   .center-items {
     text-align: center;
   }
+  input {
+    width: 400px;
+  }
 }
 
 @media (min-width: 1080px) {
@@ -288,5 +309,8 @@ label {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
+  }
+  input {
+    width: 500px;
   }
 }

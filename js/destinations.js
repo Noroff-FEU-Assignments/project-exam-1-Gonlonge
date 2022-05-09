@@ -10,8 +10,8 @@ async function getProducts(url) {
   getResults.forEach(function (result) {
     blogResults.innerHTML += ` <div>
                                <a href="specific-blog-post.html?id=${result.id}">
-                               <h2>${result.title.rendered}</h2>
                                <img src= "${result.featured_image_src.medium}">
+                               <h2>${result.title.rendered}</h2>
                                </div>`;
   });
 }

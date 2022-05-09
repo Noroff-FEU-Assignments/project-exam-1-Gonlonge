@@ -15,9 +15,10 @@ async function getProduct(url) {
   console.log(getResult);
 
   detailResults.innerHTML = `<div>
+  <img src= "${getResult.featured_image_src.medium}">
   <h3>${getResult.title.rendered}</h3>
-  
   <p>${getResult.content.rendered}</p>
   </div>`;
 }
+
 getProduct(url);
