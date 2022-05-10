@@ -13,9 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Roboto&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" 
     />
+    <script
+    src="https://kit.fontawesome.com/b318972c4d.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="css/style.css" />
+    
   </head>
   <body>
     <header>
@@ -33,14 +38,18 @@
             </a>
           </div>
         </div>
-        <div class="header-logo">
-          <a class="space-menu current-site">Home</a>
-          <a class="link-button space-menu" href="about.html">About</a>
-          <a class="link-button space-menu" href="destinations.html">Destinations</a>
-          <a class="link-button space-menu" href="contact.html">Contact</a>
-        </div>
+        <div class="header-logo BurgerMenu"  id="myBurgerMenu">
+          <a class="space-menu current-site hidden-header"  href="home.html">Home</a>
+          <a class="link-button space-menu hidden-header" href="about.html">About</a>
+          <a class="link-button space-menu hidden-header" href="destinations.html">Destinations</a>
+          <a class="link-button space-menu hidden-header" href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <label><i class="fas fa-bars fa-2x hidden-burger"></i></label>
+            <div class="section-space"></div></a>
       </div>
-    </header>
+  </header>
+
+    
     <main>
 
       <div class="main-container section-space">

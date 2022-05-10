@@ -55,7 +55,12 @@ select:hover {
   font-weight: 1000;
 }
 
-button {
+.link-button:hover {
+  color: #4caf50;
+  transition: 0.3s;
+}
+
+.button-submit {
   background-color: #4caf50;
   border: none;
   width: 200px;
@@ -65,7 +70,7 @@ button {
   border-radius: 6px;
 }
 
-button:hover {
+.button-submit:hover {
   background-color: #4caf50;
   transition: 0.3s;
 }
@@ -231,11 +236,15 @@ input:hover {
 }
 
 /* screen devices */
+
 @media (min-width: 200px) {
   .dot {
     height: 30px;
     width: 30px;
     margin: 0px 5px 0px 5px;
+  }
+  .center-items {
+    text-align: center;
   }
 }
 @media (min-width: 350px) {
@@ -244,12 +253,18 @@ input:hover {
     width: 30px;
     margin: 0px 30px 0px 30px;
   }
+  .center-items {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
   .dot {
     height: 30px;
     width: 30px;
+  }
+  .hidden-header {
+    display: none;
   }
 }
 
@@ -261,6 +276,16 @@ input:hover {
     margin-right: auto;
   }
   .hidden-mobile {
+    display: none;
+  }
+  .BurgerMenu a:not(:first-child) {
+    display: none;
+  }
+  .BurgerMenu a.icon {
+    float: right;
+    display: block;
+  }
+  .hidden-header {
     display: none;
   }
 }
@@ -294,10 +319,13 @@ input:hover {
     grid-template-columns: 1fr 2fr;
   }
   .center-items {
-    text-align: center;
+    text-align: left;
   }
   input {
     width: 400px;
+  }
+  .hidden-burger {
+    display: none;
   }
 }
 
@@ -312,5 +340,94 @@ input:hover {
   }
   input {
     width: 500px;
+  }
+  .hidden-burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .BurgerMenu a:not(:first-child) {
+    display: none;
+  }
+  .BurgerMenu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .BurgerMenu.responsive {
+    position: relative;
+  }
+  .BurgerMenu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .BurgerMenu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  text-align: center;
+  position: fixed; /* Stay in place */
+  padding-top: 230px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  width: 0%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+span.close {
+  display: none;
+}
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

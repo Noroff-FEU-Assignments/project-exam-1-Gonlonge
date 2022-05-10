@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+    src="https://kit.fontawesome.com/b318972c4d.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -33,12 +37,14 @@
             </a>
           </div>
         </div>
-        <div class="header-logo">
-          <a class="link-button space-menu" href="home.html">Home</a>
-          <a class="link-button space-menu" href="about.html">About</a>
-          <a class="link-button space-menu" href="destinations.html">Destinations</a>
-          <a class="space-menu current-site">Contact</a>
-        </div>
+        <div class="header-logo BurgerMenu"  id="myBurgerMenu">
+          <a class="link-button space-menu hidden-header"  href="home.html">Home</a>
+          <a class="link-button space-menu hidden-header" href="about.html">About</a>
+          <a class="link-button space-menu hidden-header" href="destinations.html">Destinations</a>
+          <a class="current-site space-menu hidden-header" href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <label><i class="fas fa-bars fa-2x hidden-burger"></i></label>
+            <div class="section-space"></div></a>
       </div>
     </header>
     <main>
@@ -107,7 +113,7 @@
                         <input class="input-style" name="message" id="message"/>
                     </label>
                 </div>
-                    <button class="section-space">Submit</button>
+                    <button class="button-submit section-space">Submit</button>
                   </div>
                 </form>
   
@@ -129,5 +135,6 @@
       </div>
     </footer>
     <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
