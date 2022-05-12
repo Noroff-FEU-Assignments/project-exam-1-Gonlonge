@@ -3,7 +3,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const detailR = document.querySelector(".detail-R");
+const detailR = document.querySelector(".detail-r");
 
 console.log(id);
 
@@ -16,7 +16,7 @@ async function getProduct(url) {
   const getResult = await response.json();
   console.log(getResult);
 
-  detailResults.innerHTML = `<div>
+  detailResults.innerHTML = `<div class="wp-post-img">
   <img src= "${getResult.featured_image_src.medium}">
   <h3>${getResult.title.rendered}</h3>
   <p>${getResult.content.rendered}</p>

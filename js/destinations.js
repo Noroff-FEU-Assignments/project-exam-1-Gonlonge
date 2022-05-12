@@ -1,6 +1,7 @@
 const baseUrl = "https://blogofnorway.site/blogofnorway/wp-json/wp/v2/posts";
 const blogResults = document.querySelector(".blog-results");
 const viewMorePost = document.querySelector(".view-more-post");
+const searchButton = document.querySelector(".search-button");
 
 async function getProducts(url) {
   const response = await fetch(url);
@@ -20,6 +21,12 @@ getProducts(baseUrl);
 
 viewMorePost.onchange = function (event) {
   const newUrl = baseUrl + `?per_page=${event.target.value}`;
+  blogResults.innerHTML = "";
+  getProducts(newUrl);
+};
+searchButton.onclick = function () {
+  const searchInput = document.querySelector("#search-input").value;
+  const newUrl = baseUrl + `?search=${searchInput}`;
   blogResults.innerHTML = "";
   getProducts(newUrl);
 };

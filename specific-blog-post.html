@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Blog of Norway, travel, backpacking, nature"
+      content="Blog of Norway, travel, backpacking, amazing nature, sightseeing, my specific blogs"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage blog of Norway</title>
+    <script
+    src="https://kit.fontawesome.com/b318972c4d.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&family=Roboto&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" 
     />
+    <script
+    src="https://kit.fontawesome.com/b318972c4d.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -33,37 +41,36 @@
             </a>
           </div>
         </div>
-        <div class="header-logo">
-          <a class="link-button space-menu" href="home.html">Home</a>
-          <a class="link-button space-menu" href="about.html">About</a>
-          <a class="link-button space-menu" href="destinations.html"
-            >Destinations</a
-          >
-          <a class="link-button space-menu" href="contact.html">Contact</a>
-        </div>
+        <div class="header-logo BurgerMenu"  id="myBurgerMenu">
+          <a class="link-button space-menu hidden-header"  href="home.html">Home</a>
+          <a class="link-button space-menu hidden-header" href="about.html">About</a>
+          <a class="link-button space-menu hidden-header" href="destinations.html">Destinations</a>
+          <a class="link-button space-menu hidden-header" href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <label><i class="fas fa-bars fa-2x hidden-burger"></i></label>
+            <div class="section-space"></div></a>
       </div>
-    </header>
+  </header>
     <main>
       <section class="main-container">
-        <h2>Archives</h2>
+        <h2>My Archives</h2>
       </section>
       <section class="main-container section-space">
         <!-- Trigger/Open The Modal -->
         <button id="myBtn">
           <div class="detail-results"></div>
         </button>
-
         <!-- The Modal -->
         <div id="myModal" class="modal">
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p class="modal-content detail-R"></p>
+            <p class="modal-content detail-r"></p>
           </div>
         </div>
       </section>
     </main>
-    <footer class="main-container background-color-page">
+    <footer class="main-container background-color-page higher-section-space">
       <div class="flex-wrapper section-space">
         <div class="header-block">
           <p>Instagram</p>
@@ -79,5 +86,6 @@
       </div>
     </footer>
     <script src="js/specific-blog-post.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
