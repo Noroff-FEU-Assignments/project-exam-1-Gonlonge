@@ -24,10 +24,6 @@ a {
   color: #ba0c2f;
 }
 
-.background-color-page {
-  background-color: #ebebeb;
-}
-
 /* buttons links */
 
 button {
@@ -159,7 +155,12 @@ input:hover {
 /* footer */
 
 i {
-  margin-top: 40px;
+  margin-top: 25px;
+}
+
+.background-color-page {
+  background-color: #ebebeb;
+  padding: 30px 0px 30px 0px;
 }
 
 /* JS / WP class */
@@ -408,6 +409,11 @@ span.close {
   .wp-post-img img {
     width: 100%;
     object-fit: cover;
+    font-size: 25px;
+  }
+
+  .wp-post-img h3 {
+    font-size: 22px;
   }
 
   .space-between {
