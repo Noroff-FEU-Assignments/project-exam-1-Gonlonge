@@ -16,6 +16,7 @@ a {
 
 .bolder-text {
   font-style: italic;
+  font-size: 18px;
 }
 
 /* colors */
@@ -409,7 +410,6 @@ span.close {
   .wp-post-img img {
     width: 100%;
     object-fit: cover;
-    font-size: 25px;
   }
 
   .wp-post-img h3 {
