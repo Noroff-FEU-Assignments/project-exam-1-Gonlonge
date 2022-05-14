@@ -127,6 +127,12 @@ body {
   column-gap: 25px;
 }
 
+.blog-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 /* contact */
 
 input {
@@ -340,15 +346,15 @@ span.close {
   .center-items {
     text-align: center;
   }
+  .center-items {
+    text-align: center;
+  }
 }
 @media (min-width: 350px) {
   .dot {
     height: 30px;
     width: 30px;
     margin: 0px 30px 0px 30px;
-  }
-  .center-items {
-    text-align: center;
   }
 }
 
@@ -359,6 +365,9 @@ span.close {
   }
   .hidden-header {
     display: none;
+  }
+  .blog-results {
+    justify-content: center;
   }
 }
 
