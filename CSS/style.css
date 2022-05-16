@@ -123,8 +123,7 @@ body {
 
 .wp-block-columns {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 25px;
+  row-gap: 25px;
 }
 
 .blog-results {
@@ -156,7 +155,7 @@ input:hover {
 }
 
 .input-style {
-  padding-bottom: 9px;
+  padding: 8px;
 }
 
 /* footer */
@@ -350,6 +349,7 @@ span.close {
     text-align: center;
   }
 }
+
 @media (min-width: 350px) {
   .dot {
     height: 30px;

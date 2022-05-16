@@ -17,8 +17,6 @@ async function getProduct(url) {
   console.log(getResult);
 
   detailResults.innerHTML = `<div class="wp-post-img">
-  <img src= "${getResult.featured_image_src.medium}">
-  <h3 div class="wp-post-img">${getResult.title.rendered}</h3>
   <p>${getResult.content.rendered}</p>
   </div>`;
 
