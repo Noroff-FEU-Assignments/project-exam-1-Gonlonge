@@ -24,7 +24,6 @@ async function getProduct(url) {
 <img src= "${getResult.featured_image_src.medium}">
 </div>`;
 }
-getProduct(url);
 
 /* */
 // Get the modal
@@ -52,3 +51,4 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+getProduct(url);

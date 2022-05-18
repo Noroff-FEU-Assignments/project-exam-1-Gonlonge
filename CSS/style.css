@@ -114,13 +114,6 @@ body {
   border-radius: 100%;
 }
 
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 25px;
-  max-width: 100px;
-}
-
 .wp-block-columns {
   display: grid;
   row-gap: 25px;
@@ -130,6 +123,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 /* contact */
@@ -218,84 +212,43 @@ figure {
 
 /* Modal Content */
 
-img.style {
-  max-width: 300%;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
+/* Modal Content */
 .modal-content {
+  background-color: #fefefe;
   margin: auto;
-  width: 0%;
+  padding: 20px;
+  width: 70%;
 }
 
-span.close {
-  display: none;
+/* The Close Button */
+.close {
+  color: #bbb;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-/* Add Animation */
-.modal-content {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.3s;
-  animation-name: zoom;
-  animation-duration: 0.3s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-/* carousel */
-
-/*  
-
-* {
-  box-sizing: border-box;
-}
-
-.mySlides {
-  display: none;
-}
-
-/* Slideshow container 
-.slideshow-container {
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons 
-.prev,
-.next {
+.close:hover,
+.close:focus {
+  color: #4caf50;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 16px;
-  margin-top: -22px;
-  background-color: #bbb;
-  opacity: 0.5;
-  border-radius: 50%;
 }
-
-/* Position the "next button" to the right 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  border-radius: 50%;
-}
-*/
-/* On hover, add a black background color with a little bit see-through */
+/* carousel */
 
 .prev,
 .next {
@@ -345,9 +298,7 @@ span.close {
   .center-items {
     text-align: center;
   }
-  .center-items {
-    text-align: center;
-  }
+
   .wp-post-img img {
     width: 100%;
     object-fit: cover;
@@ -372,9 +323,6 @@ span.close {
   }
   .hidden-header {
     display: none;
-  }
-  .blog-results {
-    justify-content: center;
   }
 }
 
@@ -419,11 +367,6 @@ span.close {
   .space-menu {
     margin-right: 40px;
   }
-  .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 25px;
-  }
 
   .wp-block-columns {
     display: grid;
@@ -464,16 +407,18 @@ span.close {
   .hidden-burger {
     display: none;
   }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+  }
 }
 
 @media (min-width: 1080px) {
   .space-menu {
     margin-right: 80px;
-  }
-  .grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 25px;
   }
 
   .wp-block-columns {
