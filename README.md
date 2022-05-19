@@ -79,5 +79,11 @@ OK
 ## Level 2 Process (optional)
 
 1. You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
-2. Post the data from the contact form to WordPress so you have the details saved.
-3. Allow users to submit comments on a blog post, and post this data to WordPress
+2. Post the data from the contact form to WordPress so you have the details saved. INSTALERT WPForms
+3. Allow users to submit comments on a blog post, and post this data to WordPress INSTALERT WPForms
+
+But i desided not to pay for it.
+
+https://wpforms.com/how-to-save-your-contact-form-data-in-wordpress-database/
+
+https://www.wpbeginner.com/wp-tutorials/how-to-allow-users-to-submit-posts-to-your-wordpress-site/
