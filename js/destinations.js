@@ -4,17 +4,24 @@ const viewMorePost = document.querySelector(".view-more-post");
 const searchButton = document.querySelector(".search-button");
 
 async function getProducts(url) {
-  const response = await fetch(url);
-  const getResults = await response.json();
-  console.log(getResults);
+  try {
+    const response = await fetch(url);
+    const getResults = await response.json();
+    console.log(getResults);
 
-  getResults.forEach(function (result) {
-    blogResults.innerHTML += ` <div>
+    getResults.forEach(function (result) {
+      blogResults.innerHTML += ` <div>
                                <a href="specific-blog-post.html?id=${result.id}">
                                <img src= "${result.featured_image_src.medium}">
                                <h2>${result.title.rendered}</h2>
                                </div>`;
-  });
+    });
+    const loading = document.querySelector(".loader");
+    loading.classList.remove("loading-indicator");
+  } catch (error) {
+    console.log(error);
+    blogResults.innerHTML = alert("error", error);
+  }
 }
 
 getProducts(baseUrl);
