@@ -78,7 +78,7 @@ select:hover {
 
 .button-submit:hover {
   background-color: #4caf50;
-  color: #ebebeb;
+  color: rgb(240, 240, 240);
   transition: 0.3s;
 }
 
@@ -134,16 +134,21 @@ body {
 /* contact */
 
 input {
-  width: 200px;
   display: inline-block;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   transition: 0.1s;
   outline: none;
+  padding: 8px;
+}
+
+input:focus {
+  width: 200px;
+  background-color: transparent;
 }
 
 input:hover {
-  border: 2px solid #d8d1d1;
+  border: 1px solid #4caf50;
 }
 
 .form-error {
@@ -153,10 +158,6 @@ input:hover {
   margin-top: 2px;
 }
 
-.input-style {
-  padding: 8px;
-}
-
 /* footer */
 
 i {
@@ -164,7 +165,7 @@ i {
 }
 
 .background-color-page {
-  background-color: #ebebeb;
+  background-color: rgb(240, 240, 240);
   padding: 30px 0px 30px 0px;
 }
 
@@ -343,9 +344,6 @@ figure {
     width: 100%;
     object-fit: cover;
   }
-  .search-button {
-    margin-top: 10px;
-  }
 }
 
 @media (min-width: 350px) {
@@ -444,6 +442,10 @@ figure {
   input {
     width: 400px;
   }
+  input:focus {
+    width: 450px;
+    background-color: transparent;
+  }
   .hidden-burger {
     display: none;
   }
@@ -472,6 +474,11 @@ figure {
   input {
     width: 500px;
   }
+  input:focus {
+    width: 550px;
+    background-color: transparent;
+  }
+
   .hidden-burger {
     display: none;
   }
