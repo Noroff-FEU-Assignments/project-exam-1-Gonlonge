@@ -9,90 +9,63 @@ const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-const button = document.querySelector("button");
-
-function checkIfButtonIsDisabled() {
-  // if all inputs pass validation enable the button
-  if (
-    checkLength(firstName.value, 5) &&
-    checkLength(lastName.value, 5) &&
-    validateEmail(email.value) &&
-    checkLength(subject.value, 5) &&
-    checkLength(message.value, 5)
-  ) {
-    button.disabled = false;
-  } else {
-    // clear the message
-    message.innerHTML = "";
-    // disable button
-    button.disabled = true;
-  }
-}
-// call the same function for each input's keyup event
-firstName.addEventListener("keyup", checkIfButtonIsDisabled);
-lastName.addEventListener("keyup", checkIfButtonIsDisabled);
-email.addEventListener("keyup", checkIfButtonIsDisabled);
-subject.addEventListener("keyup", checkIfButtonIsDisabled);
-message.addEventListener("keyup", checkIfButtonIsDisabled);
-
-// function to check if the length of the input value is valid
-function checkLength(value, len) {
-  if (value.trim().length >= len) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-// function for validating email
-function validateEmail(email) {
-  const regEx = /\S+@\S+\.\S+/;
-  const patternMatches = regEx.test(email);
-  return patternMatches;
-}
 
 function validateForm(event) {
   event.preventDefault();
-
-  let isValid = true;
 
   if (checkLength(firstName.value, 5) === true) {
     firstNameError.style.display = "none";
   } else {
     firstNameError.style.display = "block";
-    isValid = false;
   }
 
   if (checkLength(lastName.value, 5) === true) {
     lastNameError.style.display = "none";
   } else {
     lastNameError.style.display = "block";
-    isValid = false;
   }
 
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
-    isValid = false;
   }
   if (checkLength(subject.value, 15) === true) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
-    isValid = false;
   }
   if (checkLength(message.value, 25) === true) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
-    isValid = false;
   }
 
-  if (isValid) {
-    message.innerHTML = '<div class="message">Message sent</div>';
-    form.reset();
-  }
+  console.log("hi");
 }
 
 form.addEventListener("submit", validateForm);
+
+function checkLength(value, len) {
+  if (value.trim().length > len) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function validateEmail(email) {
+  const regEx = /\S+@\S+\.\S+/;
+  const patternMatches = regEx.test(email);
+  return patternMatches;
+}
+
+// ### Contact page
+
+// Create a contact us page, there should be 4 textboxes on this page.
+// -	Name (Should be more than 5 characters long)
+// -	Email address (Must be a valid email address)
+// -	Subject (Should be more than 15 characters long)
+// -	Message content (Should be more than 25 characters long)
+
+// Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
