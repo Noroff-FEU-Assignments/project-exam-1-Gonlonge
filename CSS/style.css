@@ -160,10 +160,6 @@ input:hover {
 
 /* footer */
 
-i {
-  margin-top: 25px;
-}
-
 .background-color-page {
   background-color: rgb(240, 240, 240);
   padding: 30px 0px 30px 0px;
@@ -196,6 +192,10 @@ figure {
 
 .space-left {
   margin-right: 25px;
+}
+
+.space-top {
+  margin-top: 25px;
 }
 
 /* modal */

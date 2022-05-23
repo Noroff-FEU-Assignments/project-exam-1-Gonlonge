@@ -20,9 +20,21 @@ async function getProduct(url) {
   <p>${getResult.content.rendered}</p>
   </div>`;
 
-  detailR.innerHTML = `<div>
-<img src= "${getResult.featured_image_src.medium}">
-</div>`;
+  detailR.innerHTML = `<img src="${getResult.featured_image_src.medium}" class="modal-img">`;
+
+  const images = document.querySelectorAll("img");
+  console.log(images);
+  let imgSrc;
+  // get images src onclick
+  images.forEach((img) => {
+    img.addEventListener("click", (e) => {
+      console.log(e.target.src);
+      imgSrc = e.target.src;
+      modal.style.display = "block";
+      let modalImage = document.getElementsByClassName("modal-img")[0];
+      modalImage.src = e.target.src;
+    });
+  });
 }
 
 getProduct(url);
@@ -37,18 +49,15 @@ let btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
+  console.log("span");
   modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
+  console.log("window");
   if (event.target == modal) {
     modal.style.display = "none";
   }
