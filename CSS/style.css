@@ -12,15 +12,18 @@ a {
     Times;
   color: black;
   text-decoration: none;
+  font-size: 16px;
 }
 
+p,
 .has-small-font-size {
   font-size: 16px;
+  font-family: "roboto", sans-serif, Arial, Helvetica, serif "Times New Roman",
+    Times;
 }
 
 .bolder-text {
   font-style: italic;
-  font-size: 18px;
 }
 
 /* colors */
@@ -111,7 +114,8 @@ body {
 }
 
 .responsive-image {
-  max-width: 100%;
+  margin-top: 60px;
+  width: 100%;
   height: auto;
 }
 
@@ -235,25 +239,14 @@ figure {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
-  padding: 20px;
-  width: 70%;
 }
 
 /* The Close Button */
 .close {
-  color: #bbb;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  display: none;
 }
 
-.close:hover,
-.close:focus {
-  color: #4caf50;
-  cursor: pointer;
-}
 /* carousel */
 
 .prev,
@@ -305,11 +298,10 @@ figure {
   border-top: 14px solid #4caf50;
   width: 90px;
   height: 90px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
-/* Safari */
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -399,13 +391,18 @@ figure {
     text-align: left;
     margin-bottom: 25px;
   }
+  .modal-content {
+    max-width: 420px;
+  }
 }
 
 @media (min-width: 651px) {
   .space-menu {
     margin-right: 40px;
   }
-
+  .modal-content {
+    max-width: 600px;
+  }
   .wp-block-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -448,13 +445,6 @@ figure {
   }
   .hidden-burger {
     display: none;
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    width: 50%;
   }
 }
 

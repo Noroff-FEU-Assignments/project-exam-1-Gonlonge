@@ -20,7 +20,7 @@ OK
 
 The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
 
-OK-
+OK
 
 ### Blog Page
 
@@ -74,15 +74,13 @@ OK
 6. Install Hotjar on your website. /_ OK- _/
 7. Ask users to test your website, and adjust based on their feedback and any insights from Hotjar. /_ OK- _/
 8. Write a report documenting your project (template provided in this repository).
-9. Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
+9. Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo./_ OK _/
 
 ## Level 2 Process (optional)
 
 1. You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
 2. Post the data from the contact form to WordPress so you have the details saved. INSTALERT WPForms
 3. Allow users to submit comments on a blog post, and post this data to WordPress INSTALERT WPForms
-
-But i desided not to pay for it.
 
 https://wpforms.com/how-to-save-your-contact-form-data-in-wordpress-database/
 
