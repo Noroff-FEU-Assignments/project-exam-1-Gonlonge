@@ -7,6 +7,11 @@ h3 {
     "Times New Roman", Times;
 }
 
+h3 {
+  font-size: 23px;
+  color: black;
+}
+
 a,
 p,
 .has-small-font-size {
