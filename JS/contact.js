@@ -90,19 +90,9 @@ function validateForm(event) {
   }
 
   if (isValid) {
-    message.innerHTML = '<div class="message">Message sent</div>';
+    message.innerHTML = '<p class="message">Message sent</p>';
     form.reset();
   }
 }
 
 form.addEventListener("submit", validateForm);
-
-// ### Contact page
-
-// Create a contact us page, there should be 4 textboxes on this page.
-// -	Name (Should be more than 5 characters long)
-// -	Email address (Must be a valid email address)
-// -	Subject (Should be more than 15 characters long)
-// -	Message content (Should be more than 25 characters long)
-
-// Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
