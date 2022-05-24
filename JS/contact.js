@@ -8,7 +8,7 @@ const emailError = document.querySelector("#emailError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const messages = document.querySelector("#messages");
-const messagesError = document.querySelector("#messageErrors");
+const messagesError = document.querySelector("#messagesError");
 
 function checkIfButtonIsDisabled() {
   // if all inputs pass validation enable the button
@@ -43,6 +43,7 @@ function checkLength(value, len) {
     return false;
   }
 }
+console.log(checkLength);
 
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
