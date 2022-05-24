@@ -18,6 +18,7 @@ a {
 p,
 .has-small-font-size {
   font-size: 16px;
+  color: black;
 }
 
 .bolder-text {
