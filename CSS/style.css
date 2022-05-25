@@ -21,8 +21,7 @@ h3 {
 }
 
 a,
-p,
-.has-small-font-size {
+p {
   font-family: "roboto", sans-serif, Arial, Helvetica, serif, "Times New Roman",
     Times;
   color: black;
@@ -66,17 +65,6 @@ select:hover {
   transition: 0.3s;
 }
 
-.link-button {
-  color: black;
-  text-decoration: none;
-  font-weight: 1000;
-}
-
-.link-button:hover {
-  color: #4caf50;
-  transition: 0.3s;
-}
-
 .button-submit {
   background-color: #4caf50;
   border: none;
@@ -88,7 +76,7 @@ select:hover {
 }
 
 .button-submit:hover {
-  background-color: #4caf50;
+  background-color: #42c046;
   color: rgb(240, 240, 240);
   transition: 0.3s;
 }
@@ -134,6 +122,7 @@ body {
 .wp-block-columns {
   display: grid;
   row-gap: 25px;
+  column-gap: 25px;
 }
 
 .blog-results {
@@ -187,9 +176,9 @@ input:hover {
 
 /* JS / WP class */
 
-.wp-block-image {
+/* .wp-block-image {
   margin: 0px;
-}
+} */
 
 figure {
   margin: 0px;
@@ -220,25 +209,6 @@ figure {
 
 /* modal */
 
-/* */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  text-align: center;
-  position: fixed; /* Stay in place */
-  padding-top: 230px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -280,7 +250,6 @@ figure {
   width: 24%;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -356,19 +325,7 @@ figure {
 
 @media (min-width: 350px) {
   .dot {
-    height: 30px;
-    width: 30px;
     margin: 0px 30px 0px 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  .dot {
-    height: 30px;
-    width: 30px;
-  }
-  .hidden-header {
-    display: none;
   }
 }
 
@@ -420,9 +377,7 @@ figure {
     max-width: 600px;
   }
   .wp-block-columns {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 25px;
     text-align: left;
   }
 
@@ -453,7 +408,6 @@ figure {
   }
   input:focus {
     width: 450px;
-    background-color: transparent;
   }
   .hidden-burger {
     display: none;
@@ -466,11 +420,7 @@ figure {
   }
 
   .wp-block-columns {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
-    text-align: left;
-    margin-top: 30px;
   }
 
   input {
@@ -478,10 +428,5 @@ figure {
   }
   input:focus {
     width: 550px;
-    background-color: transparent;
-  }
-
-  .hidden-burger {
-    display: none;
   }
 }
