@@ -404,9 +404,6 @@ figure {
     grid-gap: 30px;
     grid-template-columns: 1fr 2fr;
   }
-  .center-items {
-    text-align: left;
-  }
   input {
     width: 400px;
   }
