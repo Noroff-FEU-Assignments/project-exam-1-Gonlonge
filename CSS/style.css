@@ -176,6 +176,10 @@ input:hover {
 
 /* JS / WP class */
 
+.wp-block-image {
+  cursor: pointer;
+}
+
 /* .wp-block-image {
   margin: 0px;
 } */
