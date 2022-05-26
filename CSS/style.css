@@ -377,7 +377,7 @@ figure {
     margin-bottom: 25px;
   }
   .modal-content {
-    max-width: 420px;
+    max-width: 300px;
   }
 }
 
@@ -386,7 +386,7 @@ figure {
     margin-right: 40px;
   }
   .modal-content {
-    max-width: 600px;
+    max-width: 500px;
   }
   .wp-block-columns {
     grid-template-columns: repeat(2, 1fr);
@@ -441,5 +441,8 @@ figure {
 
   .close {
     display: none;
+  }
+  .modal-content {
+    max-width: 650px;
   }
 }
