@@ -87,6 +87,17 @@ select:hover {
   color: black;
 }
 
+.search-button {
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-button:hover {
+  color: #42c046;
+  transition: 0.3s;
+}
+
 /* head */
 
 .header-logo {
