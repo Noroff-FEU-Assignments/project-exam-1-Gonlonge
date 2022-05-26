@@ -421,10 +421,6 @@ figure {
   .hidden-burger {
     display: none;
   }
-  /* The Close Button */
-  .close {
-    display: none;
-  }
 }
 
 @media (min-width: 1080px) {
@@ -441,5 +437,9 @@ figure {
   }
   input:focus {
     width: 550px;
+  }
+
+  .close {
+    display: none;
   }
 }
