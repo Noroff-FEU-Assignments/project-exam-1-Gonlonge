@@ -90,7 +90,8 @@ function validateForm(event) {
   }
 
   if (isValid) {
-    message.innerHTML = '<p class="message">Message sent</p>';
+    message.innerHTML =
+      '<h3 class="message">DM sent, you will hear from me as soon as possible</h3>';
     form.reset();
   }
 }
