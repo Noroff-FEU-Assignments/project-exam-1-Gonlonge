@@ -232,11 +232,6 @@ figure {
   margin: auto;
 }
 
-/* The Close Button */
-.close {
-  display: none;
-}
-
 /* carousel */
 
 .prev,
@@ -325,6 +320,16 @@ figure {
     width: 100%;
     object-fit: cover;
   }
+  .close {
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: #4caf50;
+    transition: 0.3s;
+  }
 }
 
 @media (min-width: 350px) {
@@ -411,6 +416,10 @@ figure {
     width: 450px;
   }
   .hidden-burger {
+    display: none;
+  }
+  /* The Close Button */
+  .close {
     display: none;
   }
 }
