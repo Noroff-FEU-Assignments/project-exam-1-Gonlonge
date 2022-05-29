@@ -43,7 +43,6 @@ function checkLength(value, len) {
     return false;
   }
 }
-console.log(checkLength);
 
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
@@ -91,7 +90,7 @@ function validateForm(event) {
 
   if (isValid) {
     message.innerHTML =
-      '<h3 class="message">DM sent, you will hear from me as soon as possible</h3>';
+      '<p class="message">Thank you for the dm, you will hear from me as soon as possible.</p>';
     form.reset();
   }
 }

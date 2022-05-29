@@ -3,11 +3,10 @@ const blogResults = document.querySelector(".blog-results");
 const viewMorePost = document.querySelector(".view-more-post");
 const searchButton = document.querySelector(".search-button");
 
-async function getProducts(url) {
+async function getBlogPosts(url) {
   try {
     const response = await fetch(url);
     const getResults = await response.json();
-    console.log(getResults);
 
     getResults.forEach(function (result) {
       blogResults.innerHTML += ` <div>
@@ -19,21 +18,20 @@ async function getProducts(url) {
     const loading = document.querySelector(".loader");
     loading.classList.remove("loading-indicator");
   } catch (error) {
-    console.log(error);
     blogResults.innerHTML = alert("error", error);
   }
 }
 
-getProducts(baseUrl);
+getBlogPosts(baseUrl);
 
 viewMorePost.onchange = function (event) {
   const newUrl = baseUrl + `?per_page=${event.target.value}`;
   blogResults.innerHTML = "";
-  getProducts(newUrl);
+  getBlogPosts(newUrl);
 };
 searchButton.onclick = function () {
   const searchInput = document.querySelector("#search-input").value;
   const newUrl = baseUrl + `?search=${searchInput}`;
   blogResults.innerHTML = "";
-  getProducts(newUrl);
+  getBlogPosts(newUrl);
 };
