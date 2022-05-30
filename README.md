@@ -1,4 +1,4 @@
-# Project-Exam-1-Gonlonge
+# Project Exam 1 Gonlonge
 
 
 College: Noroff - Frondend developer
