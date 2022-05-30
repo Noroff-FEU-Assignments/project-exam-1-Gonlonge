@@ -19,11 +19,11 @@ This semester projeckt was about to create a Science Museum. that target audienc
 
 ## Designed With
 
-Adobe XD
+- Adobe XD
 
 ## Project planning
 
-Trello Board
+- Trello Board
 
 ## Clone the repo
 
@@ -49,5 +49,5 @@ View the design overall.
 
 ## Pictures
 
-Free pictures
-Private pictures
+- Free pictures
+- Private pictures
