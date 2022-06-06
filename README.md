@@ -7,7 +7,7 @@ Date: 05.2022
 ![Skjermbilde 2022-05-30 kl  12 09 29](https://user-images.githubusercontent.com/89197537/170970427-cb490af5-59e2-4353-8616-5da69c6253e0.png)
 
 ## Brief
-This semester projeckt was about to create a Science Museum. that target audience for primary and middle school children (7-15) and families with young children. It have to be appealing, that will attract both middle school pupils and their parents.
+This Exam Project we had to make a blog, focus was to do what we have learned during our first year of studies. I chose a travel blog.
 
 
 ## Built With
