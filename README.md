@@ -17,6 +17,10 @@ This Exam Project we had to make a blog, focus was to do what we have learned du
 - JavaScript
 - WordPress
 
+## Testing
+
+- Cypress
+
 ## Designed With
 
 - Adobe XD
